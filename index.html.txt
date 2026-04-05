@@ -1,27 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="uz">
 <head>
-    <title>Mening sayt</title>
-    <style>
-        body {
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial;
-        }
-        h1 {
-            color: black;
-            font-size: 30px;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Love</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+/* markazdagi yozuv */
+h1 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    z-index: 2;
+}
+
+/* yuraklar */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<h1>"bunyodbek 50k push"</h1>
+<h1>Malika, men seni yaxshi ko‘raman ❤️</h1>
+
+<script>
+// yuraklarni yaratish
+for (let i = 0; i < 30; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+
+    document.body.appendChild(heart);
+}
+</script>
 
 </body>
 </html>
+
