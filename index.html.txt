@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mening sayt</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial;
+        }
+        h1 {
+            color: black;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>"bunyodbek 50k push"</h1>
+
+</body>
+</html>
